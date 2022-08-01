@@ -1,16 +1,37 @@
+body {
+    background-color: rgba(127, 255, 212, 0.623);
+}
+
 .grid-container {
+    margin: 0px auto;
+    place-items: center;   
+    background-color: black;
+    border: solid 3px;
+    border-radius: 4px;
+    padding: 1em;
     display: grid;
+    width: fit-content;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 8.5em;
     column-gap: 0.5em;
     row-gap: 0.5em;
 }
 
 .grid-item {
-    font-size: 40px;
+    font-size: 50px;
     width: 1.75em;
     height: 1.75em;
     border-radius: 8px;
+}
+
+#divide-button, #multiply-button, #plus-button, 
+#minus-button, #equal-button {
+    background-color: rgba(255, 174, 0, 0.87);
+}
+
+#input-text {
+    grid-column: 1 / span 4;    
+    width: 7.5em;
+    height: 1.5em;
 }
 
 #zero-button {
@@ -21,4 +42,10 @@
 #equal-button {
     grid-column: 3 / span 2;
     width: 3.75em;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 1em;
 }
