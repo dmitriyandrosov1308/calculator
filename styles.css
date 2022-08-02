@@ -41,8 +41,8 @@ body {
 }
 
 #zero-button {
-    grid-column: 1 / span 3;
-    width: 5.75em;
+    grid-column: 1 / span 2;
+    width: 3.75em;
 }
 
 #equal-button {

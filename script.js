@@ -51,11 +51,11 @@ function enterNumber () {
 }
 
 function enterOperator () {
-    numberofOperators++;
-    if (numberofOperators > 1)
+    if (numberofOperators >= 1)
     {
         getResult(input.value);
     }
+    numberofOperators++;
     input.value += " " + this.textContent + " ";
 }
 
@@ -74,6 +74,7 @@ function getResult(text) {
         idiotVerification(arr[1], arr[2]);
     }
     numberofOperators = 0;
+
 }
 
 function getOperator(text) {
