@@ -71,7 +71,7 @@ function getResult(text) {
     }
     else {
         input.value = operate(arr[0], getOperator(arr[1]), arr[2]);
-        idiotVerification(arr[1], arr[2]);
+        dividingByZero(arr[1], arr[2]);
     }
     numberofOperators = 0;
 
@@ -87,7 +87,7 @@ function getOperator(text) {
     }
 }
 
-function idiotVerification (a, b)
+function dividingByZero (a, b)
 {
     if ((a == "÷" || a == "%") && b == "0")
     {
